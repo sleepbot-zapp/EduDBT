@@ -7,4 +7,6 @@ import (
 
 func UserRoutes(r *gin.Engine) {
 	r.POST("/save-user", controllers.SaveUser)
+	r.POST("/user", controllers.ShowUser)
+	r.PUT("/update-user", controllers.UpdateUser)
 }

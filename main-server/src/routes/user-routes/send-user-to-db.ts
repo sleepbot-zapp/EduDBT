@@ -2,7 +2,7 @@ import { Hono } from "hono";
 
 const sendToDb = new Hono();
 
-sendToDb.post("/send-to-db", async (c) => {
+sendToDb.post("/", async (c) => {
   try {
     const body = await c.req.json();
 
@@ -10,7 +10,6 @@ sendToDb.post("/send-to-db", async (c) => {
 
     console.log("Received user from Next.js:", { name, email, image });
 
-    // Forward to Go server
     const goRes = await fetch("http://localhost:3200/save-user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

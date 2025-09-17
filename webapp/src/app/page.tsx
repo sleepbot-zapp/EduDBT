@@ -1,5 +1,3 @@
-// app/page.tsx (Next.js 13+ App Router, dark mode version)
-
 "use client";
 
 import { useRouter } from "next/navigation";

@@ -17,8 +17,7 @@
     "next-auth": "^4.24.11",
     "npm": "^11.6.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "zod": "^4.1.8"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "typescript": "^5",
